@@ -1,0 +1,58 @@
+body {
+  background-image: url(images/question-mark-icon-flat-style-faq-vector-illustration-isolated-background-ask-help-sign-business-concept_157943-11055.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.accordion {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  width: min(900px, 100%);
+  box-shadow: 0 0 10px black;
+}
+
+h2 {
+  text-align: center;
+}
+
+.content-container {
+  margin-bottom: 1.5rem;
+  padding: 20px 0;
+  border-bottom: 2px solid black;
+  cursor: pointer;
+}
+
+.question {
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.question::after {
+  content: "+";
+}
+
+.answer {
+  height: 0px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.content-container.active .answer {
+  height: 50px;
+}
+
+.content-container.active .question::after {
+  content: "-";
+}

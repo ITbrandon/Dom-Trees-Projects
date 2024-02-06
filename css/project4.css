@@ -1,0 +1,61 @@
+body {
+  background-image: url(images/swim.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+}
+
+.container {
+  background-color: white;
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px black;
+}
+
+.timer {
+  font-size: 3.5rem;
+  margin-top: 2.4rem;
+}
+
+.button-container {
+  margin-top: 1.5rem;
+}
+
+.button {
+  margin: 0 0.3rem;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  width: 50px;
+  padding: 2px;
+  border-radius: 10px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.6;
+}
+
+.play {
+  background-color: green;
+}
+
+.pause {
+  background-color: gold;
+}
+
+#reset {
+  background-color: red;
+}
+
+.hidden {
+  display: none;
+}
